@@ -44,10 +44,17 @@ class ViewController: UIViewController {
             operationLabel.text = "-"
             let answer = firstNumber - secondNumber
             answerLabel.text = "\(answer)" } }
+    
+    
+    
+    @IBAction func whenDivideButtonPressed (_ sender: UIButton) {
+        if let firstNumberString = firstNumberTextField.text, let secondNumberString= secondNumberTextField.text {
+            let firstNumber = Int(firstNumberString)!
+            let secondNumber = Int(secondNumberString)!
+            operationLabel.text = "/"
+            let answer = firstNumber / secondNumber
+            answerLabel.text = "\(answer)" } }
   
-    
-    
-    
     
     
     
