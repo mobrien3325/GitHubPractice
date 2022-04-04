@@ -48,6 +48,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Add">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="whenAddButtonPressedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugx-C9-4Za"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td0-Dp-wux">
                                 <rect key="frame" x="302" y="289" width="92" height="44"/>
@@ -64,6 +67,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Subtract">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="whenSubtractButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OkF-eZ-Bc4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvm-AJ-9M5">
                                 <rect key="frame" x="200" y="289" width="110" height="44"/>
@@ -72,6 +78,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Multiply">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="whenMultiplyButtonPressedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZI-mf-gNm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd0-zH-qxd">
                                 <rect key="frame" x="282" y="145" width="56" height="54"/>
@@ -84,6 +93,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.75722245759999995" green="0.55983567940000001" blue="0.93103748559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="5gF-Td-Krj" id="FZZ-i3-fd0"/>
+                        <outlet property="firstNumberTextField" destination="VJo-M9-ZaD" id="jIJ-m3-JFI"/>
+                        <outlet property="operationLabel" destination="xpN-i5-0bm" id="od5-Im-TFU"/>
+                        <outlet property="secondNumberTextField" destination="NLf-Zk-PW1" id="JGC-6E-eyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

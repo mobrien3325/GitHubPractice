@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func whenSubtractButtonPressed (_ sender: UIButton) {
-        if let firstNumberString = firstNumberTextField.text, let secondNumberString= secondNumberTextField.text {
+        if let firstNumberString = firstNumberTextField.text, let secondNumberString = secondNumberTextField.text {
             let firstNumber = Int(firstNumberString)!
             let secondNumber = Int(secondNumberString)!
             operationLabel.text = "-"
